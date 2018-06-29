@@ -1,0 +1,23 @@
+.preview-edit-switch{
+    width: 160px;
+    padding: 0 5px;
+    float: right;
+    margin-right: 20px;
+}
+
+.preview-edit-switch .edit-label{
+    color: #9b9b9b;
+    margin-right: 10px;
+}
+.preview-edit-switch .edit-label.active{
+    color: #333;
+}
+
+.preview-edit-switch .edit-preview{
+    color: #9b9b9b;
+    margin-left: 10px;
+}
+.preview-edit-switch .edit-preview.active{
+    color: #333;
+}
+

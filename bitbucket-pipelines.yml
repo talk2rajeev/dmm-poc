@@ -1,0 +1,54 @@
+# This is a sample build configuration for JavaScript.
+# Check our guides at https://confluence.atlassian.com/x/14UWN for more examples.
+# Only use spaces to indent your .yml configuration.
+# -----
+# You can specify a custom docker image from Docker Hub as your build environment.
+image: node:10.3.0
+
+pipelines:
+  default:
+    - step:
+        caches:
+          - node
+        script: # Modify the commands below to build your repository.
+          - npm install
+          - npm test
+  branches:
+    develop:
+      - step:
+          caches:
+            - node
+          script: # Modify the commands below to build your repository.
+
+            # set globals
+            - export REACT_APP_API_URL=https://bmu1jrfwn4.execute-api.us-east-1.amazonaws.com/uat
+            # - export PUBLIC_URL=https://dmm.cloudloop.co.nz
+            - export PUBLIC_URL=https://d2342k2t4iafh4.cloudfront.net/
+            - export AWS_CLOUDFRONT_DISTRIBUTION_ID=E34JVKU324H9Q7
+            # install yarn
+            # - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 0.18.1
+            #- export PATH=$HOME/.yarn/bin:$PATH
+            # install pip + aws cli
+            - apt-get update && apt-get install -y python-dev
+            - curl -O https://bootstrap.pypa.io/get-pip.py
+            - python get-pip.py
+            - pip install awscli --upgrade
+            - aws --version
+            - npm --version
+            # build app
+            - npm ci
+            # - CI=true yarn test
+            - npm run build
+            # deploy app
+            - aws s3 sync build/ s3://sony-dmm-ui-uat
+            # e2e test deployed app
+            - aws cloudfront create-invalidation --distribution-id ${AWS_CLOUDFRONT_DISTRIBUTION_ID} --paths /index.html
+  feature/*:
+    - step:
+        caches:
+          - node
+        script:
+          # build app
+          - npm ci
+          - CI=true npm test
+          - CI=true npm run build

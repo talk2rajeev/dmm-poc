@@ -1,0 +1,7 @@
+.table-search-filter{
+    float: left;
+    position: absolute;
+    z-index: 9999;
+    left: 73px;
+    top: 13px;
+}

@@ -1,0 +1,81 @@
+{
+    "name" : "Electronics",
+    "key" : "0-0",
+    "childNodes" : [
+        {
+            "name" : "Television & Home Cinema",
+            "key" : "0-0-0",
+            "childNodes" : [
+                {"name": "leaf-1" },
+                {"name": "leaf-2" },
+                {"name": "leaf-3" }
+            ]
+        },
+        {
+            "name" : "Audio",
+            "key" : "0-0-1",
+            "childNodes" : [
+                {
+                    "name": "Walkman",
+                    "key" : "0-0-1-0",
+                    "childNodes" : [
+                        {
+                            "name": "NW-A20 Series",
+                            "key" : "0-0-1-0-0",
+                            "childNodes" : [
+                                {
+                                    "name": "NW-26HN",
+                                    "key" : "0-0-1-0-0-0",
+                                    "childNodes" : [
+                                        {
+                                            "name": "CIS (RU & KZ)",
+                                            "key" : "0-0-1-0-0-0-0",
+                                            "childNodes" : [
+                                                {"name": "B", "key" : "0-0-1-0-0-0-0-0"},
+                                                {"name": "R" , "key" : "0-0-1-0-0-0-0-1"},
+                                                {"name": "Y" , "key" : "0-0-1-0-0-0-0-2"}
+                                            ]
+                                        },
+                                        {
+                                            "name": "E (AP)",
+                                            "key" : "0-0-1-0-0-0-1"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Cameras",
+            "key" : "0-0-2",
+            "childNodes" : [
+                {"name": "leaf-1", "key" : "0-0-2-0"},
+                {"name": "leaf-2", "key" : "0-0-2-1"}
+            ]
+        },
+        {
+            "name": "Video Cameras",
+            "key" : "0-0-3",
+            "childNodes" : [
+                {
+                    "name": "Camcorder", 
+                    "key" : "0-0-3-0",
+                    "childNodes" : [
+                        {
+                            "name": "Casual Shooting", 
+                            "key" : "0-0-3-0-0"   
+                        },
+                        {
+                            "name": "Expert Capabilities", 
+                            "key" : "0-0-3-0-1"   
+                        }
+                    ]
+                },
+                {"name": "Action Cameras", "key" : "0-0-3-1"}
+            ]
+        }
+    ]
+}

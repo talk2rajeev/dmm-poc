@@ -1,0 +1,51 @@
+.circle {
+	border-radius: 50%;
+	width: 5px;
+	height: 5px; 
+	/* width and height can be anything, as long as they're equal */
+}
+/* .circle-wrapper .custom-circle{
+	display: inline-block;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background: #9b9b9b;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+} */
+
+.circle-wrapper .custom-circle {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background: #9b9b9b;
+    color: #fff!important;
+    font-size: 10px;
+    text-align: center;
+    line-height: 1.8;
+    vertical-align: middle;
+}
+
+.circle-wrapper{
+	margin-right: 5px;
+}
+
+span.ant-tree-iconEle.ant-tree-icon__customize{
+	margin-right: 5px!important;
+
+}
+
+.circle-wrapper span.category-icon-bg{
+    background: rgb(155, 155, 155);
+}
+.circle-wrapper span.model-icon-bg{
+    background: rgb(73, 144, 226);
+}
+.circle-wrapper span.supermodel-icon-bg{
+    background: rgb(246, 166, 35);
+}
+.circle-wrapper span.sku-icon-bg{
+    background: rgb(47, 158, 106);
+}

@@ -1,0 +1,27 @@
+
+.icon-circle-box{
+    border: 1px solid;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    margin-left:3px;
+    cursor: pointer;
+}
+.icon-circle-box i{
+    vertical-align: middle;
+    color: inherit;
+}
+.icon-circle-box i::before{
+    font-weight: normal;
+}
+.icon-rotate180deg{
+    transform: rotate(180deg);
+}
+.border-lightGrey{
+    border-color: #999;
+    color: #999;
+}
+.clearfix{
+    clear: both;
+}
