@@ -1,6 +1,6 @@
 **DMM UI**
 
-User Interface for Digital Marketing Master.
+It is an POC application for Digital Marketing Master.
 
 ## Based upon
 
