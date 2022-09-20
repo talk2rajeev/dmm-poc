@@ -1,6 +1,6 @@
 **DMM UI**
 
-It is an POC application for Digital Marketing Master.
+It is an POC project for Digital Marketing Master.
 
 ## Based upon
 
