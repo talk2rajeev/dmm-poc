@@ -1,4 +1,4 @@
-**DMM UI**
+**DMM UI POC**
 
 It is an POC project for Digital Marketing Master.
 
