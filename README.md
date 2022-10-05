@@ -1,6 +1,6 @@
 **DMM UI POC**
 
-It is an POC project for Digital Marketing Master.
+It is an POC project for Digital Marketing Master. It is build on vanilla JS and HRML CSS
 
 ## Based upon
 
